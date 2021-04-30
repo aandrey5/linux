@@ -1141,3 +1141,5 @@ netstat -pnltu
 
 ЛУЧШЕ ВСЕГО
 sudo lsof -i -P
+
+ iptraf-ng
