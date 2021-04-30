@@ -1131,3 +1131,10 @@ insert into flights (id, num, dateair, flight, company, airport, statusflight ) 
 
 insert into flights (id, num, dateair, flight, company, airport, statusflight ) values ('${id}', ${num}, '${dateair}', '${flight}', '${company}', '${airport}', '${statusflight}');
 x
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+ПОСМОТРЕТЬ ОТКРЫТЫЕ ПОРТЫ
+++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+netstat -pnltu
