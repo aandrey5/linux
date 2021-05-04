@@ -1143,3 +1143,11 @@ netstat -pnltu
 sudo lsof -i -P
 
  iptraf-ng
+ 
+ 
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ РАЗРЕШИТЬ ВХОДЯЩИЕ IPTABLES D HT:BVT IN_public_allow
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ iptables -I IN_public_allow -p tcp --dport 8123 -j ACCEPT
