@@ -1157,3 +1157,23 @@ sudo lsof -i -P
  RUN Superset
  ++++++++++++++++++++++++++++++++++++++++++++++++++++++
  superset run -h 10.128.100.98  -p 8088
+ 
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ CRONTAB @reboot
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+ 1. sudo -i
+ 2. create sh script in /etc/iptablesmy/iptablesmy.sh (example)
+ 
+ -----
+ #!/bin/bash
+ iptables -I IN_public_allow -p tcp --dport 8123 -j ACCEPT
+ -----
+
+ 3. chmod +x ....sh
+ 4. crontab -e (sudo -i)
+ 5. add row
+ @reboot /etc/iptablesmy/iptablesmy.sh
+ 6. save, reboot, check
+ 
