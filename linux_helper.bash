@@ -1177,3 +1177,10 @@ sudo lsof -i -P
  @reboot /etc/iptablesmy/iptablesmy.sh
  6. save, reboot, check
  
+ 
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ SYSTEM PARAMETERS MOTHERBOARD esp.
+ ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 
+sudo dmidecode -t
+
