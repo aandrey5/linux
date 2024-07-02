@@ -14,3 +14,6 @@ sudo docker cp ./dss.ddl my_postgres_2:/
 
 
 sudo  docker exec -it my_postgres_2 psql my_database -f dss.ddl
+
+# Enter to bash
+docker exec -it my_container /bin/bash
